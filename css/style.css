@@ -1,6 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
-    color: #373F51;
+    color: #3b5864;
     font-size: 16px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -12,12 +12,12 @@ body {
 }
 
 .bg-inverse {
-    background-color: #1b1f28 !important;
+    background-color: #264653 !important;
 }
 
 .about {
-    background: #d7d8dc;
-    padding: 10px 0;
+    background: #ebeeef;
+    padding: 40px 0;
     margin-top: 20px;
 }
 
@@ -25,9 +25,32 @@ body {
 }
 
 .company {
-    margin: 30px 0;
+    margin: 20px 0 40px 0;
     padding-left: 15px;
-    border-left: 3px solid #D8DBE2;
+}
+
+.employment .company {
+    border-left: 3px solid #2A9D8F;
+}
+
+.internship .company {
+    border-left: 3px solid #E76F51;
+}
+
+.education .company {
+    border-left: 3px solid #E9C46A;
+}
+
+.employment h1 {
+    color: #2A9D8F;
+}
+
+.internship h1 {
+    color: #E76F51;
+}
+
+.education h1 {
+    color: #E9C46A;
 }
 
 .company h2 {
@@ -43,17 +66,16 @@ body {
 }
 
 a {
-    color: #D8DBE2;
-    transition: .25s all;
+    color: #ebeeef;
 }
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #1b1f28;
+    color: #264653;
 }
 
 .buzzy {
-    margin: 10px 0 15px 0;
+    margin-bottom: 20px;
 }
 
 .buzzy p {
@@ -61,7 +83,7 @@ a:hover, a:focus {
     padding: 0;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #1b1f28;
+    color: #264653;
 }
 
 .buzzy a {
@@ -69,18 +91,17 @@ a:hover, a:focus {
     padding: 0;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #D8DBE2;
-    transition: .25s all;
+    color: #ebeeef;
 }
 
 .buzzy a:hover, .buzzy a:focus {
     text-decoration: none;
-    color: #1b1f28;
+    color: #264653;
 }
 
 h1 {
     font-weight: 300;
-    color: #1b1f28;
+    color: #264653;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -89,12 +110,13 @@ h1.banner-text {
     font-weight: 300;
     font-size: 52px;
     letter-spacing: 5px;
-    color: #1b1f28;
+    color: #264653;
     text-transform: uppercase;
+    margin: 40px 0 20px 0;
 }
 
 h2 {
-    color: #1b1f28;
+    color: #264653;
     font-weight: 600;
 }
 
@@ -103,7 +125,7 @@ p.company-desc {
 }
 
 .top-row {
-    background: #1b1f28;
+    background: #264653;
 }
 
 ul.sjf-nav {
@@ -125,17 +147,16 @@ ul.sjf-nav {
 }
 
 .sjf-nav span {
-    color: #D8DBE2;
+    color: #ebeeef;
     font-size: 14px;
     font-weight: 400;
 }
 
 .sjf-nav li a {
     text-decoration: none;
-    color: #D8DBE2;
+    color: #ebeeef;
     font-size: 14px;
     font-weight: 400;
-    transition: .25s all;
 }
 
 .sjf-nav li a:hover, .sjf-nav li a:focus {
@@ -162,11 +183,10 @@ ul.social {
 
 .social li a {
     text-decoration: none;
-    color: #D8DBE2;
+    color: #ebeeef;
     font-size: 20px;
     display: block;
     padding: 0;
-    transition: .25s all;
     margin: 13px 0 0 5px;
 }
 
@@ -190,10 +210,9 @@ ul.contact-social {
 
 .contact-social li a {
     text-decoration: none;
-    color: #373F51;
+    color: #3b5864;
     display: block;
     padding: 0;
-    transition: .25s all;
     margin-right: 2px;
 }
 
@@ -202,7 +221,7 @@ ul.contact-social {
 }
 
 .contact-social li a:hover, .social li a:focus {
-    color: #1b1f28;
+    color: #264653;
 }
 
 .nav-tabs {
@@ -211,25 +230,29 @@ ul.contact-social {
 }
 
 .nav-tabs>li>a {
-    border: 1px solid #D8DBE2;
+    border: 1px solid #d7dde0;
     border-radius: 2px;
-    color: #1b1f28;
-    padding: 3px 15px;
-    transition: .25s all;
-    font-size: 14px;
+    color: #264653;
+    padding: 5px 25px;
+    margin-right: 5px;
 }
 
-.nav-tabs>li>a:hover {
-    border: 1px solid #1b1f28;
-    background: #1b1f28;
+.nav-tabs>li>a.employment-link:hover {
+    border: 1px solid #2A9D8F;
+    background: #2A9D8F;
     color: #fff;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li>a.internship-link:hover {
+    border: 1px solid #E76F51;
+    background: #E76F51;
     color: #fff;
-    background-color: #1b1f28;
-    border-color: #1b1f28;
-    border: 1px solid #1b1f28;
+}
+
+.nav-tabs>li>a.education-link:hover {
+    border: 1px solid #E9C46A;
+    background: #E9C46A;
+    color: #fff;
 }
 
 .nav-tabs>li, .nav-pills>li {
@@ -250,11 +273,10 @@ ul.contact-social {
     bottom: 15px;
     right: 15px;
     z-index: 9999;
-    color: #373F51;
+    color: #758a92;
     cursor: pointer;
     text-decoration: none;
     transition: opacity 0.25s ease-out;
-    transition: .25s all;
     opacity: 0;
     text-align: center;
     padding: 5px;
@@ -262,7 +284,7 @@ ul.contact-social {
 }
 
 #back-to-top:hover {
-    color: #1b1f28;
+    color: #3b5864;
 }
 
 #back-to-top.show {
@@ -270,11 +292,11 @@ ul.contact-social {
 }
 
 .about a {
-    color: #373F51;
+    color: #3b5864;
 }
 
 .about a:hover, .about a:focus {
-    color: #1b1f28;
+    color: #264653;
 }
 
 .contact-me p {
@@ -287,14 +309,9 @@ ul.contact-social {
         font-size: 13px;
         margin: 3px 0;
     }
-    ul.social {
-        float: none;
-        text-align: center;
-        margin: 0;
-    }
     h1 {
         font-weight: 300;
-        color: #1b1f28;
+        color: #264653;
         letter-spacing: 3px;
         text-transform: uppercase;
         font-size: 28px;
@@ -303,11 +320,6 @@ ul.contact-social {
         font-size: 26px;
     }
     ul.sjf-nav {
-        text-align: center;
-        float: none;
-    }
-    .sjf-nav p {
-        margin: 5px 0 10px 0;
         float: none;
     }
     #back-to-top {
